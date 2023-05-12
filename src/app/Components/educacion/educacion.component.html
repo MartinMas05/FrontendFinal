@@ -1,0 +1,78 @@
+
+<div class="container-fluid" id="ir-educacion">
+  <div class="list-group-flush w-90">
+    <div class="row">
+      <div class="col text-start">
+        <h1>Educación</h1>    
+      <div class="col text-end">
+        <button
+          type="button"
+          class="btn btn-sm btn-outline-secondary bi bi-plus-square"
+          routerLink="/nuevaedu"
+          *ngIf="isLogged"
+        >
+          Agregar
+        </button>
+      </div>
+    </div>
+
+    <div class="list-group-item">
+      <ul>
+        <li *ngFor="let Educacion of educacion">
+          <div class="row align-items-center">
+            <div class="col-12 col-sm-3">
+              <h4>{{ Educacion.titulo }}</h4>
+            </div>
+            <div class="col-12 col-sm-4">
+              <h5>{{ Educacion.nombreInstitucion }}</h5>
+            </div>
+            <div class="col-12 col-sm-3">
+              <p>{{ Educacion.fechainicio }} a {{ Educacion.fechafin }}</p>
+            </div>
+            <div class="col-6 col-sm-1">
+              <button
+                *ngIf="isLogged"
+                class="bi bi-pencil btn btn-sm btn-outline-dark"
+                routerLink="/editedu/{{ Educacion.id }}"
+              >
+                Editar
+              </button>
+            </div>
+            <div class="col-6 col-sm-1">
+              <button
+                *ngIf="isLogged"
+                class="bi bi-trash3-fill btn btn-sm btn-outline-danger"
+                (click)="delete(Educacion.id)"
+              >
+                Borrar
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <br>
+  <div style="display: flex; align-items: center;">
+    <h2>Ingeniería en Alimentos - (2022 - Actualidad)</h2>
+    <br>
+    <img src="../../../assets/fcaluner.png" alt="Facultad de Ciencias de la Alimentacion, Universidad Nacional de Entre Rios" style="float: right;">
+  </div>
+  <br>
+  <div style="display: flex; align-items: center;">
+    <h2>Argentina Programa - (2022-2023)</h2>
+    <br>
+    <img src="../../../assets/APLogo.png" alt="Argentina Programa" style="float: right;">
+  </div> 
+  <div style="display: flex; align-items: center;">
+    <h2>Ingeniería Química - Santa Fe - (4 años)</h2>
+    <br>
+    <img src="../../../assets/FIQ-UNL.png" alt="Facultad de Ingenieria Quimica, Universidad Nacional del Litoral" style="float: right;">
+  </div>
+
+  </div>
+</div>
+<br>
+
