@@ -9,7 +9,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root',
 })
 export class AuthService {
-  private authURL = 'https://martinmasettoback.onrender.com/auth/';
+  private authURL = 'https://backmartinmasetto.onrender.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

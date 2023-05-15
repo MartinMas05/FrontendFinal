@@ -8,7 +8,7 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root',
 })
 export class SExperienciaService {
-  private URL = 'https://martinmasettoback.onrender.com/experiencia';
+  private URL = 'https://backmartinmasetto.onrender.com/experiencia';
 
   constructor(private http: HttpClient) { }
 

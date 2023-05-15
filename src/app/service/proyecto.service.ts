@@ -7,7 +7,7 @@ import { Proyecto } from '../model/proyecto';
   providedIn: 'root',
 })
 export class ProyectoService {
-  private URL = 'https://martinmasettoback.onrender.com/proyecto';
+  private URL = 'https://backmartinmasetto.onrender.com/proyecto';
 
   constructor(private http: HttpClient) { }
 

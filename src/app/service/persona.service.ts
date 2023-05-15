@@ -7,7 +7,7 @@ import { Persona } from '../model/persona.model';
   providedIn: 'root',
 })
 export class PersonaService {
-  private URL = 'https://martinmasettoback.onrender.com/persona';
+  private URL = 'https://backmartinmasetto.onrender.com/persona';
 
   constructor(private http: HttpClient) { }
 
