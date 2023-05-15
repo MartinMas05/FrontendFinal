@@ -6,8 +6,8 @@
         width: 15%;
         border-radius: 100%;
         box-shadow: 3px 3px 15px #5324ff;
-        left: 5%;
-        top:600px;
+        left: 2px;
+        top: 850px;
     }
 }
 @media (max-width: 575px){
@@ -16,8 +16,14 @@
         width: 30%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px #5324ff;
-        left: 33%;
-        top:950px;
+        left: 2px;
+        top:670px;
+    }
+    #nombre{
+        text-align: right;
+    }
+    #personatitulo{
+        text-align: right;
     }
 }
 /*etiqueta nombre*/
@@ -36,7 +42,7 @@
  color: rgb(255, 255, 255);
 }
 
-h1,p{
+h1,h2,h4,p{
     color: rgb(255, 255, 255);
 }
 div{
