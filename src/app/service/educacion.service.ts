@@ -7,7 +7,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root',
 })
 export class EducacionService {
-  private URL = 'https://backmartinmasetto.onrender.com/educacion/';
+  private URL = 'https://backmartinmasetto.onrender.com/educacion';
 
   constructor(private http: HttpClient) { }
 
