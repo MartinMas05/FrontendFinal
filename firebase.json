@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "deplot/front-end",
+    "public": "dist/front-end",
     "ignore": [
       "firebase.json",
       "**/.*",
